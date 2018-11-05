@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Keka's Wonderful Todo List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <app-add-task (newTask)="addTask($event)"></app-add-task>
+  <app-task-list [tasks]="taskList" (taskClicked)="openTask($event)"></app-task-list>
+</ion-content>
+
+<!-- 
+  There are 4 types of binding:
+  [someInput]="item" - property binding: used to input data into a component (Input)
+  (someEvent)="doThing($event)" - event binding: used to react to a component's event (Output)
+  [(ngModel)]="inputFieldValue" - two-way data binding: used to bind a variable in both directions. 
+                                  If the data is changed in the TS file, it is also changed in the HTML and
+                                  if the data is changed in the HTML file, it is also changed in the TS
+  {{ myVariable }} - string interpolation - used to show a string variable in my HTML
+ -->

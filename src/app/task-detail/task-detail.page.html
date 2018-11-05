@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ task.title }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Due date: {{ task.date }}</p> <br>
+  <p>{{ task.description }}</p>
+</ion-content>
+<!--  {{}} ==  string interpalation-->

@@ -1,0 +1,12 @@
+<div *ngFor="let task of tasks">
+
+  <ion-card (click)="openTask(task)">
+    <ion-card-header>
+      <ion-card-title>{{ task.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Due by: {{ task.date }}</p>
+    </ion-card-content>
+  </ion-card>
+
+</div>

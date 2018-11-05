@@ -1,0 +1,16 @@
+<ion-item>
+  <ion-label fixed>Title</ion-label>
+  <ion-input [(ngModel)]="task.title" type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label fixed>Due Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="task.date"></ion-datetime>
+</ion-item>
+
+<ion-item>
+  <ion-label fixed>Description</ion-label>
+  <ion-input [(ngModel)]="task.description" type="text"></ion-input>
+</ion-item>
+
+<ion-button color="primary" (click)="addTask()">Add Task</ion-button>
